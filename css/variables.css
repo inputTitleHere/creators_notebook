@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@300&display=swap');
+
+
+
+
+:root{
+  /*! Dark Theme Colorset */
+  --background-color:#323232;
+  --font-color : #ececec;
+  --greenyellow : #adff2f;
+  --border-white : #fff;
+
+  --bright-skyblue : #90fff2;
+  --purple : #cc5fff;
+  --magic-idle-color : #ff8c5e;
+  --magic-active-color : #5ea4ff;
+  --bright-purple : #e6b0ff;
+  --magic-green : #76d4ff;
+  /*! Bright Theme Colorset */
+
+
+  /*! Testing colorset */
+  --Test-color-red : #ff0000;
+
+  /*! Font Portion*/
+  /** 헤더용 black han san*/
+  --font-family-black-han-san : 'Black Han Sans', sans-serif;
+  /** 일반 텍스트용 고딕체*/
+  --font-family-gothic-a1 :  'Gothic A1', sans-serif;
+}

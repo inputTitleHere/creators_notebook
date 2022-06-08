@@ -1,0 +1,10 @@
+
+
+/** Two themeSets for Dark Theme & Bright Theme */
+
+.darktheme{
+  background: var(--background-color);
+  color: var(--font-color);
+  font-size: 18px;
+}
+

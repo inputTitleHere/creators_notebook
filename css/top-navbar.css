@@ -1,0 +1,154 @@
+
+.navbar-wrapper{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-bottom: 1px solid var(--border-white);
+
+  width: 100%;
+  height: fit-content;
+  min-height: 100px;
+}
+
+
+/** Page Icon 관련 코드 */
+.pageicon{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  height: 75px;
+  border: 1px solid var(--Test-color-red);
+}
+
+.pageicon table{
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-family-black-han-san);
+}
+
+.pageicon table tr:first-child>:first-child{
+  width: 40%;
+  border-right: 1px solid var(--Test-color-red);
+}
+
+.float-right{
+  float: right;
+}
+
+.pageicon-text{
+  font-size: 32px;
+  font-weight: 100;
+}
+
+#pageicon-initial{
+  padding: 0px 10px;
+  font-size: 60px;
+  margin: 5px;
+  border-right: 10px solid var(--greenyellow);
+
+  background-image: linear-gradient(90deg, var(--bright-skyblue) 20%, var(--greenyellow) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.magic-border-wrapper{
+  
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.magic-position-wrapper{
+  position: absolute;
+  top:-10px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.pageicon:hover .magic-border,.pageicon:hover .magic-circle,.pageicon:hover .magic-circle-dim{
+  box-shadow: 0px 0px 5px 7px var(--magic-active-color);
+  border: 7px solid var(--magic-active-color);
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+  transform-origin: center;
+}
+
+.pageicon:hover .magic-rotate-clock{
+  transform: rotate(360deg);
+  
+}
+.pageicon:hover .magic-rotate-counterclock{
+  transform: rotate(-315deg); 
+}
+
+
+.magic-border{
+  position: absolute;
+  top:33%;
+  left:33%;
+  width: 200px;
+  height: 200px;
+  border: 7px solid var(--magic-idle-color);
+  z-index: -2;
+  transition-timing-function: ease-out;
+  transition-duration: 3s;
+}
+
+.magic-border-rotate{
+  transform: rotate(45deg);
+}
+
+.magic-circle{
+  position: absolute;
+  left:55px;
+  top:-16px;
+  width: 290px;
+  height: 290px;
+  border: 7px solid var(--magic-idle-color);
+  border-radius: 50%;
+  z-index: -2;
+
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+
+.magic-circle-dim{
+  position: absolute;
+  left:35px;
+  top:-37px;
+  width: 335px;
+  height: 335px;
+  border: 7px solid var(--magic-idle-color);
+  border-radius: 50%;
+  z-index: -2;
+
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+
+/** Page Icon 관련 코드 END */
+
+/** Navigation Bar 관련 START*/
+
+.navigation{
+  display: flex;
+  align-items: flex-end;
+  float: right;
+  min-height: 50px;
+  padding-right: 15px;
+}
+
+.navigation-item{
+  width: 100px;
+  border:1px solid var(--Test-color-red);
+  text-align: center;
+}
