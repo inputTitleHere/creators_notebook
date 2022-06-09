@@ -1,23 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@300&display=swap');
 
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
 
 
 
 :root{
-  /*! Dark Theme Colorset */
+  /*! Default Dark Theme Colorset */
   --background-color:#323232;
   --font-color : #ececec;
   --greenyellow : #adff2f;
-  --border-white : #fff;
+  --border-color : #a2df77;
 
   --bright-skyblue : #90fff2;
   --purple : #cc5fff;
   --magic-idle-color : #ff8c5e;
   --magic-active-color : #5ea4ff;
   --bright-purple : #e6b0ff;
-  --magic-green : #76d4ff;
   /*! Bright Theme Colorset */
-
+  
+  
+  /*! index.css magic login colorset*/
+  --magic-idle: #cf286d;
+  --magic-green : #52e459;
+  --magic-blue : #23ace2;
 
   /*! Testing colorset */
   --Test-color-red : #ff0000;
@@ -25,6 +50,9 @@
   /*! Font Portion*/
   /** 헤더용 black han san*/
   --font-family-black-han-san : 'Black Han Sans', sans-serif;
-  /** 일반 텍스트용 고딕체*/
+  /** 일반 텍스트용 */
+  --font-family-nanum-barun-gothic :'NanumBarunGothic', sans-serif;
   --font-family-gothic-a1 :  'Gothic A1', sans-serif;
 }
+
+
