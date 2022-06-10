@@ -32,7 +32,7 @@
   --border-color : #a2df77;
 
   --bright-skyblue : #90fff2;
-  --purple : #cc5fff;
+  
   --magic-idle-color : #ff8c5e;
   --magic-active-color : #5ea4ff;
   --bright-purple : #e6b0ff;
@@ -41,14 +41,18 @@
   
   /*! index.css magic login colorset*/
   --magic-idle: #b61b5c;
-  --magic-yellow : #ffef5f;
   --magic-orange : #ff7300;
-  --magic-green : #52e459;
-  --magic-dark-green : #19491b;
+  --magic-yellow : #ffef5f;
+  --magic-green : #33bd39;
+  --magic-darkgreen : #3d7c48;
   --magic-blue : #23ace2;
-  --magic-dark-blue : #3D1BB5;
+  --magic-darkblue : #3D1BB5;
+  --magic-purple : #8622b4;
+  --book-brown : #5c492c;
+  --book-darkbrown : #422e0f;
+  --book-darkerbrown : #301f05;
   /*! Testing colorset */
-  --Test-color-red : #ff0000;
+  --test-red : #ff0000;
 
   /*! Timings */
   --magic-spin : cubic-bezier(.22,.44,.52,1.14);
