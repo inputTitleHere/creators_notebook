@@ -40,12 +40,19 @@
   
   
   /*! index.css magic login colorset*/
-  --magic-idle: #cf286d;
+  --magic-idle: #b61b5c;
+  --magic-yellow : #ffef5f;
+  --magic-orange : #ff7300;
   --magic-green : #52e459;
+  --magic-dark-green : #19491b;
   --magic-blue : #23ace2;
-
+  --magic-dark-blue : #3D1BB5;
   /*! Testing colorset */
   --Test-color-red : #ff0000;
+
+  /*! Timings */
+  --magic-spin : cubic-bezier(.22,.44,.52,1.14);
+
 
   /*! Font Portion*/
   /** 헤더용 black han san*/

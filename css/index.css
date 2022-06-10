@@ -12,10 +12,14 @@
 .login-button-wrapper{
   width: 600px;
   height: 600px;
-  border: 1px solid var(--Test-color-red);
+  padding: 20px;
 }
 
 /*^ Magic Stuff Here */
+
+#login{
+  cursor: pointer;
+}
 
 .login-magic-wrapper{
   --pos : 120px;
@@ -25,9 +29,7 @@
   align-items: center;
   width: 600px;
   height: 600px;
-  border: 1px solid var(--magic-green);
   transform-origin: center; 
-  cursor: pointer;
 }
 
 .square{
@@ -37,9 +39,17 @@
   width: 350px;
   height: 350px;
   border: 5px solid var(--magic-idle);
-  border-radius: 20px;
+  border-radius: 15px;
 }
+.not-rotated{
+  transition-duration: 3s;
+  transition-timing-function: var(--magic-spin);
+  
+}
+
 .rotated{
+  transition-duration: 3s;
+  transition-timing-function: var(--magic-spin);
   transform: rotate(45deg);
   z-index: 2;
 }
@@ -64,6 +74,7 @@
     var(--magic-green) 10px
   );
   z-index: 2;
+  transition-duration: 2s;
 }
 
 .middle{
@@ -73,6 +84,7 @@
   width: 380px;
   height: 380px;
   border: 4px solid var(--magic-blue);
+  transition-duration: 1.5s;
 }
 .smaller{
   --smaller-offset : 9px;
@@ -82,8 +94,8 @@
   top: calc(var(--pos) + var(--smaller-offset));
   left: calc(var(--pos) + var(--smaller-offset));
   background: var(--background-color);
-
-
+  transition-duration: 1s;
+  transform-origin: 172px 172px;
   z-index: 3;
 }
 .bigger{
@@ -97,6 +109,7 @@
   border-radius: 50%;
 
   box-shadow: 0px 0px 0px 10px var(--background-color), 0px 0px 0px 13px var(--magic-idle);
+  transition-duration: 2.5s;
 }
 
 .square-circle{
@@ -106,6 +119,7 @@
   border-radius: 50%;
   border: 2px solid var(--magic-blue);
   z-index: -1;
+  transition-duration: 2s;
 }
 
 .outwards{
@@ -135,5 +149,150 @@
   width: 25px;
   height: 25px;
   border: 4px solid var(--magic-blue);
+  transition-duration: 1s;
 }
+
+.circle-text{
+  font-family: var(--font-family-black-han-san);
+  font-size: 30px;
+  font-weight: 100;
+  position: absolute;
+  z-index: 9;
+}
+.circle-reverse-text{
+  font-family: var(--font-family-black-han-san);
+  font-size: 30px;
+  font-weight: 100;
+  position: absolute;
+  z-index: 9;
+}
+
+.c-text{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /*border:3px dotted blue;*/
+  padding-top: 270px;
+  font-size: 45px;
+  transform-origin: top left;
+  transform: rotate(calc(var(--i) * -8deg - 10deg));
+  transition-duration: 2s;
+  transition-timing-function: var(--magic-spin);
+  text-shadow: 0px 5px var(--magic-idle);
+}
+.counter-text{
+  position: absolute;
+  left: -10px;
+  bottom: 0px;
+  /*border:3px dotted blue;*/
+  height: 310px;
+  transform-origin: bottom;
+  transform: rotate(calc(var(--i) * 6deg - 105deg));
+  transition-duration: 2s;
+  transition-timing-function: var(--magic-spin);
+  text-shadow: 0px -5px var(--magic-idle);
+}
+
+
+/*^ Magic Stuff Here END */
+/*~ :hover rotate portion  */
+#login:hover .not-rotated{
+  transform: rotate(180deg);
+  transition-duration: 3s;
+  transition-timing-function: var(--magic-spin);
+}
+
+#login:hover .rotated{
+  transform: rotate(-225deg);
+  transition-duration: 3s;
+  transition-timing-function: var(--magic-spin);
+}
+
+#login:hover .square{
+  border: 5px solid var(--magic-yellow);
+}
+
+#login:hover .c-text{
+  transform: rotate(calc(var(--i) * -8deg + 75deg));
+  transition-duration: 2s;
+  transition-timing-function: var(--magic-spin);
+  text-shadow: 0px 5px var(--magic-blue);
+}
+
+#login:hover .counter-text{
+  transform: rotate(calc(var(--i) * 6deg - 15deg));
+  transition-duration: 2s;
+  transition-timing-function: var(--magic-spin);
+  text-shadow: 0px -5px var(--magic-blue);
+}
+#login:hover .core-circle{
+  border: 4px solid var(--magic-orange);
+}
+
+#login:hover .smaller{
+  transform: rotate(180deg);
+  transition-duration: 1s;
+  transition-timing-function: var(--magic-spin);
+}
+
+#login:hover .middle{
+  border: 4px solid var(--magic-orange);
+}
+
+#login:hover .square-circle{
+  border: 2px solid var(--magic-orange);
+}
+
+#login:hover .bigger{
+  border: 10px solid var(--magic-yellow);
+
+  box-shadow: 0px 0px 0px 10px var(--background-color), 0px 0px 0px 13px var(--magic-yellow);
+}
+
+/*~ :hover rotate portion END  */
+/*? Login Text Stuff here*/
+
+.login-text{
+  position: relative;
+  top: 0;
+  left: 0;
+  font-family: var(--font-family-black-han-san);
+  font-weight: 100;
+  font-size: 65px;
+  margin: 0;
+  text-shadow: -5px -5px var(--magic-blue);
+  transition-duration: 1s;
+}
+
+#login:hover .login-text{
+  text-shadow: 5px 5px var(--magic-orange);
+}
+.login-text-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.login{
+  height: 70px;
+  border-bottom: 8px solid var(--magic-blue);
+  transition-duration: 1s;
+}
+
+#login:hover .login{
+  border-bottom: 8px solid var(--magic-orange);
+}
+
+.register{
+  font-size: 50px;
+}
+
+
 
