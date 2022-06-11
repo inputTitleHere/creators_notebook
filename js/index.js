@@ -39,7 +39,16 @@ const triggerLoginAction=()=>{
   const loginElement = document.querySelector("#login");
   loginElement.style.cursor="default";
   loginElement.style.pointerEvents="none";
-  console.log("TESTER");
+
+  setTimeout(() => {
+    const loginWindowWrapper = document.querySelector(".login-window-wrapper");
+    loginWindowWrapper.classList.add('login-window-wrapper-enlarge');
+  }, 300);
+
+  setTimeout(() => {
+    darkMagic.classList.add('dark-magic-after');
+  }, 400);
+
 };
 
 

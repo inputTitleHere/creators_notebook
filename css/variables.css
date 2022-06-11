@@ -42,12 +42,14 @@
   /*! index.css magic login colorset*/
   --magic-idle: #b61b5c;
   --magic-orange : #ff7300;
-  --magic-yellow : #ffef5f;
+  --magic-yellow : #ffd700;
+  --magic-paper : #f5f5dc ;
   --magic-green : #33bd39;
   --magic-darkgreen : #3d7c48;
   --magic-blue : #23ace2;
   --magic-darkblue : #3D1BB5;
   --magic-purple : #8622b4;
+  --book-lighterbrown : #aa854d;
   --book-brown : #5c492c;
   --book-darkbrown : #422e0f;
   --book-darkerbrown : #301f05;
@@ -56,7 +58,6 @@
 
   /*! Timings */
   --magic-spin : cubic-bezier(.22,.44,.52,1.14);
-
 
   /*! Font Portion*/
   /** 헤더용 black han san*/
