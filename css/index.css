@@ -1,6 +1,7 @@
 
 body{
-  overflow-x: hidden;
+  overflow-x:hidden;
+  height: 1200px;
 }
 
 .main-content-wrapper{
@@ -8,7 +9,7 @@ body{
   max-width: 1500px;
   width: fit-content;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 55px;
 }
 
 .login-button-wrapper{
@@ -191,6 +192,7 @@ section{
   transition-duration: 2s;
   transition-timing-function: var(--magic-spin);
   text-shadow: 0px 5px var(--magic-idle);
+  transition-delay: .3s;
 }
 .counter-text{
   position: absolute;
@@ -290,6 +292,9 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  transition-duration: 1s;
+
   z-index: 10;
 }
 .login{
@@ -299,22 +304,50 @@ section{
   transition-duration: 1s;
 }
 
+#login:hover .login-text-wrapper{
+  top: 35px;
+  left: 35px;
+}
+
 #login:hover .login{
-  top: 50px;
-  left: 50px;
   border-bottom: 8px solid var(--magic-orange);
 }
 
 .register{
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 50px;
   transition-duration: 1s;
 }
 
-#login:hover .register{
-  top: 50px;
-  left: 50px;
+
+.dark-magic{
+  opacity: 0;
+  position: absolute;
+  top: 290px;
+  left: 290px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--test-red);
+  background: var(--background-color);
+  border-radius: 50%;
+  
+  z-index: 15;
 }
+
+.dark-magic-enlarge{
+  opacity: 1;
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  width: 700px;
+  height: 700px;
+  /*border: 2px solid var(--test-red);*/
+  background: var(--background-color);
+  border-radius: 50%;
+  transition-duration: 1s;
+  z-index: 14;
+}
+
 
 /*? Login Text Stuff END*/
 /** Site purpose */
@@ -327,26 +360,37 @@ h1{
 }
 
 #site-purpose{
-  position: absolute;
+  position: relative;
   left: 0;
   min-height: 200px;
   min-width: 600px;
   margin-top: 100px;
   
+  overflow: hidden;
+
   z-index:20 ;
 }
+
+
 .purpose-wrapper{
   position: relative;
   left: 0;
   width: 99vw;
   min-height: 300px;
   height: fit-content;
-  border-bottom: 5px solid var(--test-red);
+  padding-top: 40px;
+}
+
+.skew-wrapper{
+  position: absolute;
+  top: 950px;
+  width: 100vw;
+  height: 400px;
 }
 
 .skew-background-1{
   position: absolute;
-  top: 940px;
+  top: 0px;
   left: 0;
   width: 100vw;
   height: 100%;
@@ -360,7 +404,7 @@ h1{
 
 .skew-background-2{
   position: absolute;
-  top: 940px;
+  top: 0px;
   left: 0;
   width: 100vw;
   height: 100%;
@@ -370,6 +414,15 @@ h1{
   box-shadow: 0px -10px 0px 0px #f5bfa6, 0px -17px 0px 0px #c77b78;
 
   z-index: -98;
+}
+
+.bottom-cover{
+  position: absolute;
+  top: 150px;
+  background: var(--book-brown);
+  box-shadow: 0px 10px 0px 0px #f5bfa6, 0px 17px 0px 0px #c77b78;
+  width: 100vw;
+  z-index: -95;
 }
 
 .line-drawer{
@@ -389,6 +442,12 @@ h1{
   z-index: -1;
 }
 
+.to-bottom{
+  position: absolute;
+  bottom: 30px;
+  height: 10px;
+  width: 100%;
+}
 
 h1.title{
   position: relative;
@@ -398,14 +457,23 @@ h1.title{
 }
 
 .title-text{
-  border-bottom: 2px solid var(--greenyellow);
+  border-bottom: 5px solid var(--greenyellow);
+  text-shadow: 3px 3px var(--magic-darkgreen);
 }
 
-.content{
-  border: 3px solid var(--magic-blue);
-  max-width: 1140px;
+p.content{
+  max-width: 1440px;
+  width: 80vw;
   margin: 0px 10vw auto;
   font-size: 24px;
   line-height: 35px;
+  color: var(--font-color);
 }
+
+/*^ Footer Section */
+
+.footer{
+  --footer-height : 10px;
+}
+
 
