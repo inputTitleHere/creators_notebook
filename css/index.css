@@ -356,7 +356,7 @@ section{
 
 .login-window-wrapper{
   position: absolute;
-  
+  border-radius: 50%;
   width: 1px;
   height: 1px;
   z-index: 13;
@@ -367,11 +367,13 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 650px;
-  height: 650px;
+  width: 670px;
+  height: 670px;
   border-radius: 50%;
   transition-duration:1s;
   border: 5px solid var(--greenyellow);
+  background: var(--background-brightercolor);
+  pointer-events: all;
 }
 
 .login-window{
@@ -380,19 +382,14 @@ section{
   width: 350px;
   min-height: 500px;
   height: 500px;
-  box-shadow: 25px 0px 0px -10px white, 30px 0px 0px -5px var(--book-lighterbrown), 32px 0px 0px -3px var(--magic-yellow);
+  box-shadow: 20px 0px 0px -10px white, 20px 0px 0px -5px var(--book-brown), 22px 0px 0px -3px var(--magic-yellow);
 
   border: 4px solid var(--magic-yellow);
-  background: var(--book-lighterbrown);
-  background-image: linear-gradient(to right,var(--book-brown) 48px, var(--book-darkbrown) 55px, transparent 55px);  
+  background: var(--book-brown);
+  background-image: linear-gradient(to right,var(--book-lighterbrown) 48px, var(--book-darkbrown) 55px, transparent 55px);  
   border-left: none;
-  border-radius: 10px 50px 20px 20px;
+  border-radius: 10px 50px 20px 0px;
   z-index: 12;
-}
-
-.login-window::after{
-  content: "";
-  
 }
 
 .login-window h1{
@@ -407,16 +404,16 @@ section{
 }
 
 .login-window table{
-  color: #D11F2F;
-  color: #F33139;
   border-collapse: collapse;
   margin-top: 10px;
   margin-left: 60px;
   width: 80%;
+  font-size: 24px;
 }
 
 .login-window table tr:nth-child(odd){
-  background-color: black;
+  width: 30px;
+  
 }
 
 

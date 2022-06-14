@@ -27,6 +27,7 @@
 :root{
   /*! Default Dark Theme Colorset */
   --background-color:#323232;
+  --background-brightercolor:#4f656b;
   --font-color : #ececec;
   --greenyellow : #adff2f;
   --border-color : #a2df77;
