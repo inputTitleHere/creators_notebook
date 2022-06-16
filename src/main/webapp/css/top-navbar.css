@@ -1,0 +1,189 @@
+
+.navbar-wrapper{
+  top: 0%;
+  left: 0%;
+  border-bottom: 5px solid var(--border-color);
+  box-shadow: 0px 3px 0px 0px var(--background-color), 0px 5px 0px 0px var(--border-color);
+  width: 100%;
+  height: auto;
+  min-height: 10px;
+}
+
+
+
+/** Page Icon 관련 코드 */
+.pageicon{
+  position: relative;
+  top: 15px;
+  left: 0px;
+  width: 400px;
+  height: fit-content;
+  border-bottom: 2px solid var(--greenyellow);
+  border-top: 2px solid var(--greenyellow);
+  border-right: 2px solid var(--greenyellow);
+  padding-bottom: 10px;
+
+  box-shadow: 0px -5px 0px 0px var(--background-color),0px -10px 0px 0px var(--greenyellow);
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.pageicon table{
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-family-black-han-san);
+}
+
+.pageicon table tr:first-child>:first-child{
+  width: 30%;
+}
+
+.link-text{
+  color: inherit;
+  text-decoration: none;
+}
+
+.float-right{
+  float: right;
+  padding-right: 5px;
+}
+
+.pageicon-text{
+  font-size: 32px;
+  font-weight: 100;
+  text-shadow: 5px 5px var(--background-color);
+}
+
+#pageicon-initial{
+  padding: 0px 10px;
+  font-size: 60px;
+  margin: 5px;
+  border-right: 10px solid var(--greenyellow);
+
+  background-image: linear-gradient(90deg, var(--bright-skyblue) 20%, var(--greenyellow) 90%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.magic-border-wrapper{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.magic-position-wrapper{
+  position: absolute;
+  top:-10px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.pageicon:hover .magic-border,.pageicon:hover .magic-circle,.pageicon:hover .magic-circle-dim{
+  box-shadow: 0px 0px 5px 7px var(--magic-active-color);
+  border: 7px solid var(--magic-active-color);
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+  transform-origin: center;
+}
+
+.pageicon:hover .magic-rotate-clock{
+  transform: rotate(360deg);
+  
+}
+.pageicon:hover .magic-rotate-counterclock{
+  transform: rotate(-315deg); 
+}
+
+
+.magic-border{
+  position: absolute;
+  top:25px;
+  left:100px;
+  width: 200px;
+  height: 200px;
+  border: 7px solid var(--magic-idle-color);
+  z-index: -2;
+  transition-timing-function: ease-out;
+  transition-duration: 3s;
+  border-radius: 10px;
+}
+
+.magic-border-rotate{
+  transform: rotate(45deg);
+}
+
+.magic-circle{
+  position: absolute;
+  left:55px;
+  top:-16px;
+  width: 290px;
+  height: 290px;
+  border: 7px solid var(--magic-idle-color);
+  border-radius: 50%;
+  z-index: -2;
+
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+
+.magic-circle-dim{
+  position: absolute;
+  left:35px;
+  top:-37px;
+  width: 335px;
+  height: 335px;
+  border: 7px solid var(--magic-idle-color);
+  border-radius: 50%;
+  z-index: -2;
+
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+
+/** Page Icon 관련 코드 END */
+
+/** Navigation Bar 관련 START*/
+
+
+.navigation{
+  display: flex;
+  max-width: 100vw;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 15px;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+.navigation-item{
+  width: 100px;
+  text-align: center;
+  font-size: 24px;
+  padding: 5px;
+  padding-bottom: 0px;
+}
+
+.navigation-left{
+  border: 3px solid var(--border-color);
+  border-bottom: none;
+  border-radius: 12px 0 0 0;
+}
+.navigation-right{
+  border-right: 3px solid var(--border-color);
+  border-top: 3px solid var(--border-color);
+  border-radius: 0 12px 0 0;
+}
+.navigation-center{
+  border-top: 3px solid var(--border-color);
+  border-right: 3px solid var(--border-color);
+}
