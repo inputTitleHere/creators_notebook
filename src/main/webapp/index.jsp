@@ -113,7 +113,7 @@
       <div class="login-window-wrapper">
         <div class="login-window">
           <h1> :: 로 그 인 :: </h1>
-          <form action="javascript:lph()"><!-- /web/className.do-->
+          <form id="loginFrm" name="loginFrm" action="<%= request.getContextPath()%>/login" method="POST"><!-- /web/className.do-->
             <table>
               <tr>
                 <td>
