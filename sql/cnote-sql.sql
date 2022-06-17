@@ -18,18 +18,6 @@ select * from user_sequences;
 
 drop table member;
 
-create table member (
-    member_id varchar2(20),
-    password varchar2(300) not null,
-    member_name varchar2(50) not null,
-    member_role char(1) default 'U' not null,
-    email varchar2(500),
-    point number default 1000,
-    enroll_date date default sysdate,
-    constraint pk_member_id primary key (member_id),
-    constraint ck_member_role check(member_role in ('U','A')),
-    constraint uq_member_email unique(email)
-);
 
 create table member (
     member_id varchar2(20),

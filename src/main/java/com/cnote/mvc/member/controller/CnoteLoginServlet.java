@@ -16,10 +16,19 @@ import com.cnote.mvc.member.service.MemberService;
 /**
  * Servlet implementation class MemberLoginServlet
  */
+
 @WebServlet("/login")
-public class MemberLoginServlet extends HttpServlet {
+public class CnoteLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private MemberService memberService = new MemberService();
+    
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/plain; charset=utf-8");
+		response.getWriter().append("Database 연결테스트 - 서버콘솔을 확인하세요");
+		
+		
+	}
+    
     
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
@@ -41,8 +50,10 @@ public class MemberLoginServlet extends HttpServlet {
 			session.setAttribute("msg",	"아이디 또는 비밀번호가 일치하지 않습니다.");
 		}
 		
-		RequestDispatcher reqDispatcher = request.getRequestDispatcher("/index.jsp");
-		reqDispatcher.forward(request, response);
+		response.setContentType("text/plain; charset=utf-8");
+		response.getWriter().append("연결테스트 - 서버콘솔을 확인하세요");
+		
+		
 		
 	}
 
