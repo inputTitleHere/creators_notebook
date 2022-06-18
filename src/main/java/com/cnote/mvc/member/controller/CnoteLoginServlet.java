@@ -16,7 +16,6 @@ import com.cnote.mvc.member.service.MemberService;
 /**
  * Servlet implementation class MemberLoginServlet
  */
-
 @WebServlet("/login")
 public class CnoteLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -25,7 +24,6 @@ public class CnoteLoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/plain; charset=utf-8");
 		response.getWriter().append("Database 연결테스트 - 서버콘솔을 확인하세요");
-		
 		
 	}
     
@@ -53,8 +51,7 @@ public class CnoteLoginServlet extends HttpServlet {
 		response.setContentType("text/plain; charset=utf-8");
 		response.getWriter().append("연결테스트 - 서버콘솔을 확인하세요");
 		
-		
-		
-	}
-
-}
+	} // END doPost
+	
+	
+ } // END Class

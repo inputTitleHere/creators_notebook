@@ -32,10 +32,10 @@ public class MemberDao {
 	
 	
 	public Member findById(Connection conn, String memberId) {
-		PreparedStatement 	pstmt=null;
-		ResultSet 			rset=null;
-		Member 				member=null;
-		String sql=prop.getProperty("findById");
+		PreparedStatement 	pstmt 	=null;
+		ResultSet 			rset 	=null;
+		Member 				member 	=null;
+		String 				sql 	=prop.getProperty("findById");
 		
 		try {
 			pstmt=conn.prepareStatement(sql);

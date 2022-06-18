@@ -8,20 +8,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class TestServlet
+ * Servlet implementation class Tester
  */
-@WebServlet("/test/servlet")
-public class TestServlet extends HttpServlet {
+@WebServlet("/testgrad")
+public class Tester extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/plain; charset=utf-8");
+		System.out.println("Is Working");
+		response.setContentType("text/html; charset=utf-8");
 		response.getWriter().append("Database 연결테스트 - 서버콘솔을 확인하세요");
-		
-		
 	}
-
+	
 }
