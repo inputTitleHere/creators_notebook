@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@300&display=swap');
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+
+
+:root{
+  /*! Default Dark Theme Colorset */
+  --background-color:#323232;
+  --background-brightercolor:#3d4c5f;
+  --font-color : #ececec;
+  --greenyellow : #adff2f;
+  --border-color : #a2df77;
+
+  --bright-skyblue : #90fff2;
+  
+  --magic-idle-color : #ff8c5e;
+  --magic-active-color : #5ea4ff;
+  --bright-purple : #e6b0ff;
+  /*! Bright Theme Colorset */
+  
+  
+  /*! index.css magic login colorset*/
+  --magic-idle: #b61b5c;
+  --magic-brighteridle: #cc57c2;
+  --magic-orange : #ff7300;
+  --magic-yellow : #ffd700;
+  --magic-paper : #f5f5dc ;
+  --magic-green : #33bd39;
+  --magic-neongreen : #00b34a;
+  --magic-darkgreen : #3d7c48;
+  --magic-blue : #23ace2;
+  --magic-darkblue : #3D1BB5;
+  --magic-purple : #8622b4;
+  --book-lighterbrown : #aa854d;
+  --book-brown : #5c492c;
+  --book-darkbrown : #422e0f;
+  --book-darkerbrown : #301f05;
+  /*! Testing colorset */
+  --test-red : #ff0000;
+
+  /*! Timings */
+  --magic-spin : cubic-bezier(.22,.44,.52,1.14);
+
+  /*! Font Portion*/
+  /** 헤더용 black han san*/
+  --font-family-black-han-san : 'Black Han Sans', sans-serif;
+  /** 일반 텍스트용 */
+  --font-family-nanum-barun-gothic :'NanumBarunGothic', sans-serif;
+  --font-family-gothic-a1 :  'Gothic A1', sans-serif;
+}
+
+
